@@ -28,3 +28,15 @@ def greet(name="World"):
 
 greet()  # Calling the function with default parameter
 greet("Alice")  # Calling the function with a specific name
+
+# Function call other function
+def main():
+    my_name = input("What's your name? ").strip().capitalize()  # Getting user's name
+    greet(my_name)  # Calling greet function with a specific name
+
+def greet(name="World"):
+    print(f"Hello, {name}!")  # Function to greet a person
+
+if __name__ == "__main__":
+    main()  # Running the main function when the script is executed
+

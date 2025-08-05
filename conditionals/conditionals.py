@@ -11,3 +11,9 @@ else:
     print(f"{x} is equal to {y}")
 
 
+# Conditional with logical operator
+if (x > y) or (x == y):
+    print(f"{x} is either greater than or equal to {y}")
+else:
+    print(f"{x} is less than {y}")
+

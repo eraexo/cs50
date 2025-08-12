@@ -54,3 +54,41 @@ def meow(n):
 if __name__ == "__main__":
     main()
 
+
+# Iterate over a list
+animals = ["cat", "dog", "bird"
+           ]
+for animal in animals:
+    print("I have a " + animal)
+
+print(len(animals))
+
+def length_of_list(lst):
+    count = 0
+    for _ in lst:
+        count += 1
+    return count
+
+print(length_of_list(animals))
+
+# iterate using len
+def iterate_with_len(lst):
+    for i in range(len(lst)):
+        print("I have a " + lst[i])
+
+iterate_with_len(animals)
+
+# Dictionaries
+animals_dict = {
+    "cat": "meow",
+    "dog": "woof",
+    "bird": "tweet"
+}
+
+print(animals_dict)
+print(animals_dict["cat"])
+
+
+for animal, sound in animals_dict.items():
+    print(f"The {animal} goes {sound}")
+

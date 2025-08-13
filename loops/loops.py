@@ -92,3 +92,16 @@ print(animals_dict["cat"])
 for animal, sound in animals_dict.items():
     print(f"The {animal} goes {sound}")
 
+
+def main():
+    print_square(3)
+
+
+def print_square(size):
+    for i in range(size):
+        new_square(size)
+
+def new_square(width):
+    print("#" * width)
+
+main()
